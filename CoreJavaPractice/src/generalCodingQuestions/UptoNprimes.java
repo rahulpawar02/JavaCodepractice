@@ -19,8 +19,7 @@ public class UptoNprimes {
 			if(count == 0) {
 				System.out.println(i);
 			}
-			
-
+		
 		}
 
 	}
