@@ -1,6 +1,7 @@
 package string.palindromicstring;
 
 //Approach - 1
+
 public class PalindromicOrNot1 {
 
 	public static String checkPalind(String str1) {

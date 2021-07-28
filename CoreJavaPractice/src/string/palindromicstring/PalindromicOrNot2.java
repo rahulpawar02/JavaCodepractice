@@ -1,6 +1,7 @@
 package string.palindromicstring;
 
-//Approach 2- two pointer 
+//Approach 2- two pointer
+
 public class PalindromicOrNot2 {
 
 	
