@@ -22,6 +22,7 @@ public class AnimalDemo{
  
 public static void main(String args[]){
 
+	@SuppressWarnings("unused")
 	Dog dobj = new Dog();
 }
 

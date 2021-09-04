@@ -1,7 +1,5 @@
 package string.repeated_or_duplicate;
 
-import java.util.Arrays;
-
 class RepeatedWord{
 
 public static void main(String args[]){
@@ -17,6 +15,7 @@ public static void main(String args[]){
 
 		for(int j=i+1;j<ch.length;j++){
 
+			@SuppressWarnings("unused")
 			int k=0;
 			if(ch[i] == ch[j]){
 
