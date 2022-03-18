@@ -15,9 +15,9 @@ public class ReadFile {
 		
 		InputStream in = new FileInputStream(file);
 		
+		@SuppressWarnings("resource")
 		BufferedReader br = new BufferedReader(new InputStreamReader(in));
-		
-		
+	
 		String line;
 		while((line = br.readLine())!=null) { //here we store into line variable and check also is is not null
 		
@@ -32,7 +32,6 @@ public class ReadFile {
 		
 		File file = new File("/home/rahul/git/JavaCodepractice/CoreJavaPractice/src/file/doc.txt");
 		
-		String content = null;
 		try{
 			readFile(file);
 		}catch(IOException ex) {
