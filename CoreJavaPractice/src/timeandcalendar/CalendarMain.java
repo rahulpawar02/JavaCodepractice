@@ -36,7 +36,12 @@ public class CalendarMain {
 	
 	
 	  private static class DF extends SimpleDateFormat {
-	        @Override
+	        /**
+		 * 
+		 */
+		private static final long serialVersionUID = 6344280517263132041L;
+
+			@Override
 	        public DateFormatSymbols getDateFormatSymbols() {
 	            return super.getDateFormatSymbols();
 	        }
