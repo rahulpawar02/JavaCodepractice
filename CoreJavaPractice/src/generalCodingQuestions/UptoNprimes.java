@@ -9,8 +9,8 @@ public class UptoNprimes {
 
 		for (int i = 2; i <= target_no; i++) {
 
-			int count = 0;
-			for (int j = 2; j * j <= i; j++) {
+			int count = 0; //we take a count variable for the tracing purpose.
+			for (int j = 2; j * j <= i; j++) { //under this we are write the logic of checking prime or not.
 				if (i % j == 0) {
 					count++;
 					break;
@@ -22,7 +22,5 @@ public class UptoNprimes {
 			}
 		
 		}
-
 	}
-
 }
