@@ -19,17 +19,17 @@ public class Employee implements Comparable<Employee>{ //here < > we need to men
 	
 	//compareTo method.. only one method in Comparable interface that is compareTo(Object obj)
 	// compareTo based on empId property	
-	@Override
-	public int compareTo(Employee empObj) {
-		return this.empId - empObj.empId;
-	}
-	
-// compareTo based on name property [ example for string data type ]
 //	@Override
 //	public int compareTo(Employee empObj) {
-//		int cnt = name.compareTo(empObj.name);
-//		return cnt;
+//		return this.empId - empObj.empId;
 //	}
+	
+	
+// compareTo based on name property [ example for string data type ]
+	@Override
+	public int compareTo(Employee empObj) {
+		return this.name.compareTo(empObj.name);
+	}
 		
 	public int getId() {
 		return empId;
