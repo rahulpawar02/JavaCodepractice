@@ -4,17 +4,17 @@ public class Employee implements Comparable<Employee>{ //here < > we need to men
 
 	private int empId;
 	private String name;
-	private String phone;
+	private double salary;
 	
 	
 	public Employee() {
 		
 	}
 	
-	public Employee(int empId, String name, String phone) {
+	public Employee(int empId, String name, double salary) {
 		this.empId = empId;
 		this.name = name;
-		this.phone = phone;
+		this.salary = salary;
 	}
 	
 	//compareTo method.. only one method in Comparable interface that is compareTo(Object obj)
@@ -46,18 +46,13 @@ public class Employee implements Comparable<Employee>{ //here < > we need to men
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public String getPhone() {
-		return phone;
-	}
-	
-	public void setPhone(String phone) {
-		this.phone = phone;
+
+	public double getSalary() {
+		return salary;
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [empId=" + empId + ", name=" + name + ", phone=" + phone + "]";
+	public void setSalary(double salary) {
+		this.salary = salary;
 	}
-
+	
 }

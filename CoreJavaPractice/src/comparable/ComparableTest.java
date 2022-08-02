@@ -9,15 +9,16 @@ public class ComparableTest {
 		
 		ArrayList<Employee> employeeList = new ArrayList<Employee>(); 
 		
-		employeeList.add(new Employee(2,"yash@gmail.com","5555"));
-		employeeList.add(new Employee(1,"adi@gmail.com","6666"));
-		employeeList.add(new Employee(3,"bond@gmail.com","4444"));
+		employeeList.add(new Employee(2,"Yash",30000.00));
+		employeeList.add(new Employee(1,"Aditya",40000.00));
+		employeeList.add(new Employee(3,"Bhumi",20000.00));
 		
-		
-		System.out.println(employeeList);
-		
+		System.out.println("Before comparable:");
+		employeeList.stream().forEach(obj -> System.out.println(obj));
+
 		Collections.sort(employeeList);
-		System.out.println(employeeList);
+		System.out.println("After comparable:");
+		employeeList.stream().forEach(obj -> System.out.println(obj));
 		
 	}
 }
