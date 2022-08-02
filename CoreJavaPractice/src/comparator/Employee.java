@@ -1,6 +1,5 @@
 package comparator;
 
-import java.util.Comparator;
 //we can't implement Comparator interface in model class, we have to create new class based on your required property. 
 //example if you want to compare based on salary for that new class, if compare based on name for that new class and implements the comparator interface
 

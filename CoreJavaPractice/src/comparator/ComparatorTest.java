@@ -16,7 +16,7 @@ public class ComparatorTest {
 		employeeList.add(new Employee(3,"Bhumi",30000.00));
 		employeeList.add(new Employee(4,"Aditya",20000.00));
 
-		ArrayList<Employee> employeeList2 = employeeList;
+		ArrayList<Employee> employeeList2 = new ArrayList<>(employeeList);
 		
 		System.out.println("Before comparator:");
 		employeeList.stream().forEach(obj -> System.out.println(obj));
