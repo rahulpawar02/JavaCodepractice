@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-
+//if we want sort the objects based on multiple field or property then we use the comparator. 
 public class ComparatorTest {
 
 	public static void main(String[] args) {

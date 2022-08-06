@@ -6,7 +6,6 @@ public class Employee implements Comparable<Employee>{ //here < > we need to men
 	private String name;
 	private double salary;
 	
-	
 	public Employee() {
 		
 	}
@@ -53,6 +52,11 @@ public class Employee implements Comparable<Employee>{ //here < > we need to men
 
 	public void setSalary(double salary) {
 		this.salary = salary;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empId=" + empId + ", name=" + name + ", salary=" + salary + "]";
 	}
 	
 }
