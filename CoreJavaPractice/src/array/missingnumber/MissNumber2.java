@@ -1,4 +1,4 @@
-package array;
+package array.missingnumber;
 
 public class MissNumber2 {
 
