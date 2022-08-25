@@ -1,4 +1,5 @@
 package generalCodingQuestions;
+//Q: sort the salary of employees in descending order whose deptId is 10.
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,8 +25,6 @@ public class SalaryDesc {
 			Collections.sort(filterList, Collections.reverseOrder());
 			
 			System.out.println("deptList:"+filterList);
-			
-		
+				
 	}
-
 }
