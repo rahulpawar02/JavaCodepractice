@@ -4,7 +4,7 @@ public class MissNumber1 {
 	
 	public static int missingNumber(int[] array, int n) {
 		
-		for(int i=1; i<=n+1; i++) {
+		for(int i=1; i<=n+1; i++) {  //this loop for iteration of 1 to nth natural number, so we have to missing number count also iteration perpose.
 			
 			int j=0;
 			for(j=0; j<n; j++) {
