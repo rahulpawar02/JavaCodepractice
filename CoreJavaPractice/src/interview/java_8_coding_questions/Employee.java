@@ -6,7 +6,7 @@ public class Employee {
 	private String name;
 	private Long deptId;
 	private Double salary;
-	
+
 	public Employee(Long id, String name, Long deptId, Double salary) {
 		super();
 		this.id = id;
@@ -14,7 +14,7 @@ public class Employee {
 		this.deptId = deptId;
 		this.salary = salary;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}

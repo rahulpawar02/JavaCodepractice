@@ -13,8 +13,8 @@ public class SalaryDesc {
 		List<Employee> empList = new ArrayList<>();
 		empList.add(new Employee(1L, "finance", 11L, 40000.0));
 		empList.add(new Employee(2L, "IT", 10L, 20000.0));
-		empList.add(new Employee(3L,"R&D", 10L, 30000.0));
-			
+		empList.add(new Employee(3L, "R&D", 10L, 30000.0));
+
 		List<Long> collect = empList.stream().map(Employee::getDeptId).collect(Collectors.toList());
 		System.out.println("dept number List:" + collect);
 
@@ -25,6 +25,5 @@ public class SalaryDesc {
 		Collections.sort(filterList, Collections.reverseOrder());
 
 		System.out.println("salaries of dept No:10 in decending order:" + filterList);
-				
 	}
 }
