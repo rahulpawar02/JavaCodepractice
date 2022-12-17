@@ -15,7 +15,9 @@ class B extends A {
 
 public class OverloadintTest {
 	public static void main(String[] args) {
-		B b = (B) new A();
+		//B b = (B) new A();
 
 	}
 }
+
+//
