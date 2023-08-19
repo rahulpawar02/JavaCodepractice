@@ -35,7 +35,7 @@ public class FirstNonRepeated {
 		
 		Character firstNonRepChar2 = filterStr.chars() // char() which return the stream of characters
 				.mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
-				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) //it's return the map where keys are characters and values are the counts of each character
 				.entrySet().stream()
 				.filter(entry -> entry.getValue() == 1L) // filter out entries whose count is 1.
 				.map(entry -> entry.getKey())
