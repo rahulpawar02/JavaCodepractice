@@ -5,6 +5,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+//Given a String, find the first non-repeated character in it using Stream functions?
 public class FirstNonRepeated {
 
 	public static void main(String[] args) {

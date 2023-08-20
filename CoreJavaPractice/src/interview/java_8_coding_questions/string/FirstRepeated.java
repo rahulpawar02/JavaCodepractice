@@ -1,10 +1,10 @@
 package interview.java_8_coding_questions.string;
-//Given a String, find the first repeated character in it using Stream functions?
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+//Given a String, find the first repeated character in it using Stream functions?
 public class FirstRepeated {
 
 	public static void main(String[] args) {
