@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
+//import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 public class TestOrgMain {
@@ -36,6 +36,6 @@ public class TestOrgMain {
 						Collectors.mapping(Map.Entry::getValue, Collectors.toList())));
 
 		System.out.println("orgnization and user map" + orgUserMap);
-        //output: orgnization and user map{101=[1, 2, 3], 102=[4, 5, 6]}
+        //output: orgnization and user map{101=[1, 2, 3], 102=[4, 5, 6]}			
 	}
 }

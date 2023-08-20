@@ -1,10 +1,7 @@
 package leetcode;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 public class FirstUniqueCharacter {
 
@@ -17,7 +14,6 @@ public class FirstUniqueCharacter {
 		{
 			arr[s.charAt(i)]+=1;
 			System.out.println(s.charAt(i)+" "+arr[s.charAt(i)]);
-			
 			System.out.println(map);
 		}
 		

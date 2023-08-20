@@ -43,6 +43,7 @@ public class GroupingByMultipleFieldsExample {
 
 		});
 
+		System.out.println("empGenderMap: "+ empGenderMap);
 		// suppose iterate and perform some operations
 	}
 }

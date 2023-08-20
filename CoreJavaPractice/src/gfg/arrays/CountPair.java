@@ -26,8 +26,13 @@ public static int getPairCount(int arr[], int sum, int n) {
 		
 	}
 	
-	int totalCount = 0;
+//iterate map
+	for(Map.Entry<Integer, Integer> mapEntry : hm.entrySet()) {
+		System.out.println(mapEntry.getKey() +" "+ mapEntry.getValue());
+	}
 	
+	
+	int totalCount = 0;
 	
 	
 	return totalCount;
