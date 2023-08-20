@@ -1,6 +1,7 @@
 package interview.java_8_coding_questions.string;
 
 import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -31,17 +32,17 @@ public class FirstNonRepeated {
 		
 		System.out.println(foundNonRepChar ? "first Non-repeated charater is: " + firstNonRepChar1
 				: "first Non-repeated charater is not found.");	
-		//Java 8 way:
 		
+		//Java 8 way:
 		Character firstNonRepChar2 = filterStr.chars() // char() which return the stream of characters
 				.mapToObj(s -> Character.toLowerCase(Character.valueOf((char) s)))
 				.collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting())) //it's return the map where keys are characters and values are the counts of each character
 				.entrySet().stream()
 				.filter(entry -> entry.getValue() == 1L) // filter out entries whose count is 1.
-				.map(entry -> entry.getKey())
+				.map(Map.Entry::getKey)
 				.findFirst().orElse('\0'); // Provide default value '\0' if not found
 		
-		System.out.println(firstNonRepChar2 != '\0' ? "first Non-repeated charater is: " + firstNonRepChar2
-				: "first Non-repeated charater is not found.");
+		System.out.println(firstNonRepChar2 != '\0' ? "First Non-repeated Character is: " + firstNonRepChar2
+				: "First Non-repeated Character is Not Found");
 	}
 }
