@@ -33,18 +33,18 @@ public class TestLoad {
 				.collect(Collectors.groupingBy(LoadPO::getLoadId));
 		System.out.println("LoadIdwithLoadMap-1:" + LoadIdwithLoadMap1);
 
-//			Approach-1
-		Map<Long, List<Long>> LoadIdwithLoadMap2 = loadPOList.stream().collect(Collectors
-				.groupingBy(LoadPO::getSupplierOrgId, Collectors.mapping(LoadPO::getPoId, Collectors.toList())));
-		System.out.println("LoadIdwithLoadMap-2:" + LoadIdwithLoadMap2);
-
-//			Approach-2
-		Map<Long, List<Long>> supplierOrgPoIdsMap = loadPOList.stream()
+//			Approach-1	
+		Map<Long, List<Long>> supplierOrgPoIdsMap1 = loadPOList.stream()
 				.map(ele -> Map.entry(ele.getSupplierOrgId(), ele.getPoId())).collect(Collectors
 						.groupingBy(Map.Entry::getKey, Collectors.mapping(Map.Entry::getValue, Collectors.toList())));
-		System.out.println("supplierOrgPoIdsMap:" + supplierOrgPoIdsMap);
+		System.out.println("supplierOrgPoIdsMap-1:" + supplierOrgPoIdsMap1);
 
-		// The two approach you provided achieve the same end result, but 1st Appraoch is preffered
+//			Approach-2 (optimized or code reduced approach)
+		Map<Long, List<Long>> supplierOrgPoIdsMap2 = loadPOList.stream().collect(Collectors
+				.groupingBy(LoadPO::getSupplierOrgId, Collectors.mapping(LoadPO::getPoId, Collectors.toList())));
+		System.out.println("supplierOrgPoIdsMap-2:" + supplierOrgPoIdsMap2);
+
+		// The two approach you provided achieve the same end result, but 2nd Appraoch is preffered
 
 	}
 
