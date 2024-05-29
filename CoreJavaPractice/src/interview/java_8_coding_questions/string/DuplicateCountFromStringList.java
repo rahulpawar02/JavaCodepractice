@@ -16,8 +16,13 @@ public class DuplicateCountFromStringList {
 		Map<String, Long> collectedMap = strList.stream().filter(ele -> Collections.frequency(strList, ele) > 1)
 				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
-		System.out.println("collectedMap" + collectedMap);
+		System.out.println("collectedMap: " + collectedMap);
 		
 	}
 
 }
+
+/* Output:
+ * collectedMap: {BB=3, AA=2}
+ * 
+ */
