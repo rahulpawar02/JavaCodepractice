@@ -7,7 +7,7 @@ public class MiddleOfLinkedList {
 		int[] values = { 1, 2, 3, 4, 5, 6 };
 		ListNode head = createLinkedList(values);
 	    ListNode middleNodeData = middleNode(head);
-	    System.out.println("middle Node Data:" + middleNodeData.val);
+	    System.out.println("middle Node Data:" + middleNodeData.data);
 	}
 
 	// create LinkedList of ListNode
@@ -51,15 +51,4 @@ public class MiddleOfLinkedList {
 		return temp;
 	}
 
-}
-
-// Definition for singly-linked list Node class.
-class ListNode {
-	int val;
-	ListNode next;
-	
-	//parameterized constructor
-	ListNode(int val) {
-		this.val = val;
-	}
 }
