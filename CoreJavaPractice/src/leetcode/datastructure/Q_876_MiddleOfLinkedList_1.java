@@ -1,12 +1,15 @@
 package leetcode.datastructure;
 
-public class MiddleOfLinkedList {
+//Approach 1
+public class Q_876_MiddleOfLinkedList_1 {
 
 	public static void main(String[] args) {
 
 		int[] values = { 1, 2, 3, 4, 5, 6 };
-		ListNode head = createLinkedList(values);
-	    ListNode middleNodeData = middleNode(head);
+		ListNode headNode = createLinkedList(values);
+		System.out.println("Head Node is: " + headNode.data);
+		printLinkedList(headNode);
+	    ListNode middleNodeData = middleNode(headNode);
 	    System.out.println("middle Node Data:" + middleNodeData.data);
 	}
 
@@ -24,6 +27,17 @@ public class MiddleOfLinkedList {
 			 current = current.next;// moves the current pointer to this new node, preparing for the next iteration.
 		}
 		return head;
+	}
+	
+	// Print the created linked list
+	public static void printLinkedList(ListNode headNode) {
+
+		ListNode current = headNode;
+		System.out.println("LinkedList data is:");
+		while (current != null) {
+			System.out.println(current.data);
+			current = current.next;
+		}
 	}
 	
     // find the middle node of a linked list
