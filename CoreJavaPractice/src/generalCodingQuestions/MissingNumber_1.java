@@ -24,3 +24,5 @@ public class MissingNumber_1 {
 	}
 }
 // This approch efficient when you have sorted Array.
+//Time Complexity: 𝑂(𝑛)
+//Space Complexity: O(1)
