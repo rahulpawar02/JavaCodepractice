@@ -1,29 +1,26 @@
 package generalCodingQuestions;
 
-import java.util.Arrays;
+public class MissingNumber_1 {
 
-public class MissNumber {
+	static int missingNumber(int arr[], int n) {
 
-	static int missingNumber(int array[], int n) {
-		
-		Arrays.sort(array);
-		
-		int num = 0;
-		for(int i=1;i<=n;i++) {
-			
-			for(int e: array) {
-				if(e==i) {
-					break;
-				}
+		int num = 1;
+		for (int i = 0; i < n; i++) {
+			if (arr[i] == num) {
+				num++;
+				continue;
+			} else {
+				return num;
 			}
 		}
-		
 		return num;
 	}
 	
 	public static void main(String[] args) {
 		
-		int array[] = {2,1,3,5};
-		missingNumber(array, array.length);
+		int arr[] = {1, 2, 3, 5};
+		int result = missingNumber(arr, arr.length);
+		System.out.println(result);
 	}
 }
+// This approch efficient when you have sorted Array.
