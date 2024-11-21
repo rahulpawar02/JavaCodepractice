@@ -43,7 +43,5 @@ public class SalaryDesc {
 	     
 	     System.out.println("sorted emplist-2" + sortedEmployees2);
 
-	     
-	     
 	}
 }
