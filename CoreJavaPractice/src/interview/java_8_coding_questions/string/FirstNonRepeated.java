@@ -54,12 +54,13 @@ public class FirstNonRepeated {
 				.mapToObj(c -> Character.toLowerCase(Character.valueOf((char) c)))
 				.collect(Collectors.groupingBy(o -> o, LinkedHashMap::new, Collectors.counting()));
 		
-		Character firstNonRepChar3 = charCount.entrySet().stream().filter(entry -> entry.getValue() == 1).map(Map.Entry::getKey)
-				.findFirst().get();
+		Character firstNonRepChar3 = charCount.entrySet().stream().filter(entry -> entry.getValue() == 1)
+				.map(Map.Entry::getKey).findFirst().get();
 		
 		System.out.println("combined: first non-repeated char is:" + firstNonRepChar3);
 		
-		Character firstRepChar = charCount.entrySet().stream().filter(entry -> entry.getValue() > 1).map(Map.Entry::getKey).findFirst().get();
+		Character firstRepChar = charCount.entrySet().stream().filter(entry -> entry.getValue() > 1)
+				.map(Map.Entry::getKey).findFirst().get();
 		
 		System.out.println("combined: first Repeated char is:" + firstRepChar);
 
